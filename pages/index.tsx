@@ -20,5 +20,9 @@ export default function Home() {
 
   // <Account key={session.user.id} session={session} />
 
-  return <Container>{!session ? <Auth /> : <PostList />}</Container>;
+  return (
+    <Container>
+      <PostList />
+    </Container>
+  );
 }
